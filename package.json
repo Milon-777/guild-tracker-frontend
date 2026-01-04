@@ -10,9 +10,9 @@
         "lint": "ng lint",
         "lint:fix": "ng lint --fix",
         "prettier": "prettier --write .",
-        "stylelint": "stylelint \"src/**/*.{css,scss}\" --config stylelint.config.mjs",
-        "stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix --config stylelint.config.mjs",
-        "prepare": "husky"
+        "stylelint": "stylelint \"src/**/*.{css,scss}\"",
+        "stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix",
+        "prepare": "husky install"
     },
     "lint-staged": {
         "*.ts": [
@@ -20,10 +20,11 @@
             "prettier --write"
         ],
         "*.html": [
+            "eslint --fix",
             "prettier --write"
         ],
         "*.scss": [
-            "stylelint --fix --config stylelint.config.mjs",
+            "stylelint --fix --config",
             "prettier --write"
         ]
     },
