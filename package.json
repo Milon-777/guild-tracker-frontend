@@ -24,7 +24,7 @@
             "prettier --write"
         ],
         "*.scss": [
-            "stylelint --fix --config",
+            "stylelint --fix",
             "prettier --write"
         ]
     },

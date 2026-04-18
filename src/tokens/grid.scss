@@ -1,0 +1,29 @@
+:root {
+    --grid-max-width: 100rem;
+    --grid-gutter: clamp(1rem, 1vw + 0.5rem, 2rem);
+    --grid-columns: 12;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: var(--grid-max-width);
+    padding-inline: var(--grid-gutter);
+}
+
+.grid {
+    display: grid;
+    gap: var(--grid-gutter);
+    grid-template-columns: 1fr;
+}
+
+@media (width >= 48rem) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 64rem) {
+    .grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+}
