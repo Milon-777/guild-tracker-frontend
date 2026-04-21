@@ -1,0 +1,11 @@
+.container {
+    background: linear-gradient(
+        to top left,
+        color-mix(in srgb, var(--color-cyan-950), var(--color-black) 50%) 0%,
+        color-mix(in srgb, var(--color-cyan-800), var(--color-black) 50%) 50%,
+        color-mix(in srgb, var(--color-cyan-950), var(--color-black) 50%) 100%
+    );
+    color: var(--color-white);
+    min-height: 100dvh;
+    min-width: 100vw;
+}

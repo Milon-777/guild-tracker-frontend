@@ -1,2 +1,18 @@
-<p class="auth-page">auth-</p>
-dsds
+<main class="auth-page-wrapper">
+    <div class="auth-block">
+        <img ngSrc="GAIA-icon.svg" alt="Guild Tracker logo" class="app-logo" width="80" height="80" />
+
+        <h1 class="app-name">Guild Tracker</h1>
+        <p class="app-description">System for guild tracking</p>
+
+        <button class="auth-button" type="button" (click)="loginWithDiscord()">
+            <span>Login via Discord</span>
+            <img src="discord-icon.svg" alt="" class="logo" />
+        </button>
+
+        <p class="guest-hint">
+            Don't have access?<br />
+            <a routerLink="/" class="guest-link">View functionality as a guest</a>
+        </p>
+    </div>
+</main>
